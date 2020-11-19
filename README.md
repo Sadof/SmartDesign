@@ -16,7 +16,7 @@
 
 Curl команды:
 * Создание нового товара: 
-  *<pre>curl --header "Content-Type: application/json" --request POST --data "{\\"name\\":\\"Samsung A3\\",\\"description\\":\\"A3\\", \\"params\\": {\\"width\\":13, \\"height\\":25}}" http://localhost:8000/api/product</pre>
+  <pre>curl --header "Content-Type: application/json" --request POST --data "{\\"name\\":\\"Samsung A3\\",\\"description\\":\\"A3\\", \\"params\\": {\\"width\\":13, \\"height\\":25}}" http://localhost:8000/api/product</pre>
 * Получение товара по параметру:
   * по имени <pre>curl "http://localhost:8000/api/product?name=Samsung%20A3"</pre>
   * по параметру <pre>curl "http://localhost:8000/api/product?param=height&value=25"</pre>
