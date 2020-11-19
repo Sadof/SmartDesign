@@ -39,7 +39,6 @@ class ProductView(generics.RetrieveAPIView):
     queryset = Product.objects.all()
 
     def get_object(self):
-        print(self.kwargs['pk'])
         queryset = get_obj_or_404(Product, pk=self.kwargs['pk'])
         return queryset
 
